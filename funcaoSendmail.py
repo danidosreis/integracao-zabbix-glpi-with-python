@@ -7,12 +7,12 @@ def send_email(chamado, cliente, alerta, hostname):
 	# Informações do Servidor SMTP e autenticaçao
 	smtp_ssl_host = 'outlook.office365.com'
 	smtp_ssl_port = 587
-	username = 'danielle.silva@somosagility.com.br'
+	username = 'email@dominio.com.br'
 	password = 'senha'
 
 	# De, Para, Assunto
-	from_addr = 'danielle.silva@somosagility.com.br'
-	to_addrs = ['grupo@somosagility.com.br']
+	from_addr = 'email@dominio.com.br'
+	to_addrs = ['grupo@dominio.com.br']
 	assunto = f'{cliente} | {alerta} [ASGS #{chamado}] '
 
 	# Informações que completarão o template
